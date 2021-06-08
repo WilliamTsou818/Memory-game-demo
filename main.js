@@ -92,6 +92,14 @@ const view = {
       <p>Complete!</p>
       <p>Score: ${model.score}</p>
       <p>You've tried: ${model.triedTimes} times</p>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     `
 
     const header = document.querySelector('#header')

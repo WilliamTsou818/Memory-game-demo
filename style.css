@@ -12,7 +12,7 @@
 
   flex: 7% 1 1;
   height: 8vw;
-  border: 2px solid rgb(168, 176, 219);
+  border: 2px solid rgb(75, 72, 39);
   margin: 2px;
 
   /* inner card display */
@@ -41,7 +41,7 @@
 }
 
 .paired {
-  background-color: rgb(190, 241, 217);
+  background-color: rgb(124, 235, 114);
 }
 
 /* header part */
@@ -94,7 +94,7 @@
   position: absolute;
   z-index: 999;
   top: 33vh;
-  background-color: RGBA(232, 246, 254, 0.7);
+  background: linear-gradient(to left, #89c6e2, #eaebab);  
   width: 100vw;
   padding: 50px 0;
 }
@@ -107,5 +107,85 @@
 .completed > p:first-child {
   font-size: 3.5em;
   font-weight: 700;
-  color: #364abe;
+  color: #283ba7;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: background-animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 4s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 2.5s;
+}
+
+@keyframes background-animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+
 }
